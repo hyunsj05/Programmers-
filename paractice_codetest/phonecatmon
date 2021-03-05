@@ -1,0 +1,8 @@
+def solution(nums):
+    tem=[]
+    for i in nums:
+        if i not in tem:
+            tem.append(i)
+    if len(tem)>len(nums)/2:
+        return len(nums)/2
+    return len(tem)
